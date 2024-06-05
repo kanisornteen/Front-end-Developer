@@ -7,40 +7,45 @@
         <title>Storemesh Company Test</title>
     </head>
     
-    <body class="m-0 p-0">
+    <body class="m-0 p-0 flex flex-col min-h-screen">
         <!-- แถบบน -->
-        <nav class="bg-slate-500 flex items-center justify-between h-16">
-            <div class="bg-blue-300 flex flex-row items-center h-full w-full">
-                <img src="https://lh5.googleusercontent.com/aqE1oxj-7msRPZFVDkXkww4ejsIDb49rNt4g9aISwnEQ0zeWNSPoCqfkYxaEY2YL6DojmmzYLuny9IDqxM75THM=w16383" class="w-80" alt="">
-                <ul class="border-2 border-red-500">
-                    <li class="flex flex-row w-72 items-center justify-between">
-                        <a href="" class="mr-2 text-lg">menu1</a>
-                        <a href="" class="mr-2 text-lg">menu2</a>
-                        <a href="" class="mr-2 text-lg">menu3</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="border-2 border-red-500 bg-blue-300 w-full flex flex-row items-center justify-between h-full">
-                <h1 class="text-lg">Search</h1>
-                <h1 class="text-lg">menu</h1>
-                <h1 class="text-lg">Profile</h1>
-            </div>
+        <nav class="grid grid-cols-5 bg-green-400">
+            <img src="https://lh5.googleusercontent.com/aqE1oxj-7msRPZFVDkXkww4ejsIDb49rNt4g9aISwnEQ0zeWNSPoCqfkYxaEY2YL6DojmmzYLuny9IDqxM75THM=w16383" class="w-80" alt="">
+            <ul class="flex justify-center items-center gap-x-7 bg-blue-300">
+                <li><a href="#"></a>menu1</li>
+                <li><a href="#"></a>menu2</li>
+                <li><a href="#"></a>menu3 </li>
+            </ul>
+            <div class="justify-self-center place-self-center">Search</div>
+            <div class="justify-self-center place-self-center">Menu</div>
+            <div class="justify-self-center place-self-center">Profile</div>
         </nav>
 
         <!-- เนื้อหา -->
-        <div class="bg-blue-400 flex flex-row p-2 h-full max-h-full">
-            <aside class="w-96 max-h-max bg-slate-300 mr-2">
-                <h1 class="text-white text-4xl text-center mt-3">Filter</h1>
+        <div class="flex-grow grid grid-cols-4 mx-3 mt-3 bg-blue-400">
+            <aside class="p-4 bg-slate-300">
+                <h1 class="text-4xl text-center">Filter</h1>
             </aside>
-            <section class="bg-slate-200 max-h-max w-screen">
-                <div class="max-w-7xl h-20 m-2 bg-slate-600"></div>
-                <div class="max-w-7xl h-20 m-2 bg-slate-600"></div>
-                <div class="max-w-7xl h-20 m-2 bg-slate-600"></div>
-                <div class="max-w-7xl h-20 m-2 bg-slate-600"></div>
-                <div class="max-w-7xl h-20 m-2 bg-slate-600"></div>
-                <div class="max-w-7xl h-20 m-2 bg-slate-600"></div>
-                <div class="max-w-7xl h-20 m-2 bg-slate-600"></div>
+            <section class="px-4 ml-3 col-span-3 bg-red-400">
+                <div class="flex justify-between mb-4">
+                    <h1 class="text-lg">Date</h1>
+                    <h1 class="text-lg">Sort by</h1>
+                </div>
+                <div class="grid grid-row-7 grid-cols-1 gap-3 overflow-y-auto">
+                    <div class="min-h-16 bg-blue-300">1</div>
+                    <div class="min-h-16 bg-blue-300">2</div>
+                    <div class="min-h-16 bg-blue-300">3</div>
+                    <div class="min-h-16 bg-blue-300">4</div>
+                    <div class="min-h-16 bg-blue-300">5</div>
+                    <div class="min-h-16 bg-blue-300">6</div>
+                    <div class="min-h-16 bg-blue-300">7</div>
+                </div>
             </section>
+            <div class="col-end-5 bg-blue-300 flex justify-end items-center pr-2">
+                <button type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2"><</button>
+                <button type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2">1</button>
+                <button type="button" class="text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5 me-2">></button>
+            </div>
         </div>
     </body>
 </html>

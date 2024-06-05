@@ -88,43 +88,53 @@
             <button
               data-collapse-toggle="navbar-hamburger"
               type="button"
-              class="inline-flex items-center justify-center p-2 w- h-10 text-sm text-gray-500 rounded-lg hover:bg-white focus:outline-none"
+              class="inline-flex items-center justify-center size-10 text-sm text-gray-500 hover:bg-white focus:outline-none mb-2"
               aria-controls="navbar-hamburger"
               aria-expanded="false"
+              id="ham-button"
             >
               <img class="size-7" src="./img/ham-menu.png" alt="" />
             </button>
-            <div class="hidden w-full" id="navbar-hamburger">
+            <div class="absolute left-0 mt-20 hidden w-full rounded-lg" id="navbar-hamburger">
               <ul
-                class="flex flex-col font-medium mt-4 rounded-lg bg-gray-50 dark:bg-gray-800 dark:border-gray-700"
+                class="flex flex-col font-medium rounded-lg divide-y divide-slate-700 bg-gray-50"
               >
+              <li>
+                <a href="#" class="block py-2 px-3 text-gray-900 rounded flex hover:bg-gray-200">
+                    <img
+                    class="size-8 rounded-full justify-self-center mr-2 place-self-center bg-gray-300"
+                    src="./img/letter-a-inside-a-circle.png"
+                    alt=""></img
+                    >profile
+                </a>
+              </li>
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-white bg-blue-700 rounded dark:bg-blue-600"
+                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-200"
                     aria-current="page"
-                    >Home</a
+                    >menu1</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                    >Services</a
+                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-200"
+                    >menu2</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white"
-                    >Pricing</a
+                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-200"
+                    >menu3</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
-                    >Contact</a
+                    class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-200"
+                    >other</a
                   >
                 </li>
               </ul>
@@ -193,5 +203,29 @@
         </button>
       </div>
     </div>
+
+    <script>
+        document.getElementById('ham-button').addEventListener('click', function() {
+            var menuItems = document.getElementById('navbar-hamburger');
+            if (menuItems.classList.contains('hidden')) {
+                menuItems.classList.remove('hidden');
+            } else {
+                menuItems.classList.add('hidden');
+            }
+        });
+
+        // Close the dropdown if the user clicks outside of it
+        // window.onclick = function(event) {
+        //     if (!event.target.matches('#ham-button')) {
+        //         var dropdowns = document.getElementsByClassName('navbar-hamburger');
+        //         for (var i = 0; i < dropdowns.length; i++) {
+        //             var openDropdown = dropdowns[i];
+        //             if (!openDropdown.classList.contains('hidden')) {
+        //                 openDropdown.classList.add('hidden');
+        //             }
+        //         }
+        //     }
+        // }
+    </script>
   </body>
 </html>

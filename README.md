@@ -8,5 +8,5 @@
 
 ## การเปิดดูไฟล์
 1. Clone โปรเจกต์
-2. เข้าถึงตำแหน่งที่มีไฟล์ package.json
+2. เข้าถึงโฟลเดอร์ที่มีไฟล์ package.json
 3. ใช้คำสั่ง npm run dev ในการรัน Tailwind css Framwork
